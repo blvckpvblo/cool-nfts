@@ -69,7 +69,7 @@ contract MyCoolNFT is ERC721URIStorage {
         "Date"
     ];
 
-    constructor() ERC721("CoolNFT", "ROUND") {
+    constructor() ERC721("CoolNFT", "CNFT") {
         console.log("This is my NFT contract. Whoa!");
     }
 
