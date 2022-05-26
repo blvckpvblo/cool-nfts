@@ -109,6 +109,8 @@ contract MyCoolNFT is ERC721URIStorage {
         return thirdWords[rand];
     }
 
+    event NewCoolNFTMinted(address sender, uint256 tokenId);
+
     function random(string memory input) internal pure returns (uint256) {
         return uint256(keccak256(abi.encodePacked(input)));
     }
@@ -163,5 +165,7 @@ contract MyCoolNFT is ERC721URIStorage {
             newItemId,
             msg.sender
         );
+
+        emit NewCoolNFTMinted(msg.sender, newItemId);
     }
 }
