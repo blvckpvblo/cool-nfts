@@ -1,9 +1,16 @@
-node_modules
-.env
-coverage
-coverage.json
-typechain
+# smart contract
 
-#Hardhat files
-cache
-artifacts
+smart-contract/node_modules
+smart-contract/.env
+smart-contract/coverage
+smart-contract/coverage.json
+smart-contract/typechain
+
+## Hardhat files
+smart-contract/cache
+smart-contract/artifacts
+
+# frontend
+
+frontend/node_modules/
+frontend/build/
