@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-etherscan");
 require("dotenv").config({ path: ".env" });
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -19,6 +20,9 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.1",
+  etherscan: {
+    apiKey: "KD4F7RIRVCF54B8DNUC8KIAK5Q622GW6G8"
+  },
   networks: {
     rinkeby: {
       url: process.env.ALCHEMY_API_KEY_URL,
